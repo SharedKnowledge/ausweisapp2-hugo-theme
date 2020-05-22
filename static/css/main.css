@@ -7,6 +7,8 @@ html, body {
   height: 100%;
 }
 
+/* grids part */
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -41,12 +43,13 @@ html, body {
   grid-row: 19 / 21;
 }
 
-
 .body {
   grid-column: 2 / 10;
   grid-row: 2 / 19;
   padding: 15px;
 }
+
+/* end of grids */
 
 ul li {
   text-decoration: none;
@@ -54,17 +57,20 @@ ul li {
   padding: 5px 0px;
 }
 
-ul li a {
-  text-decoration: none;
-  list-style-type: none;
-  color: white;
-}
-
-ul li a :hover {
-  color: green;
-}
-
 /* Manipulate the highlighting*/
 .highlight {
   padding: 5px 15px;
+}
+
+.sub-menu {
+  margin-left: 15px;
+}
+
+.nav-dark li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-dark li :hover {
+  color: rgba(0, 0, 0, 0.7);
 }

@@ -2,6 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <title>{{ .Page.Title }}</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/syntax.css">
     </head>
@@ -11,33 +12,7 @@
     <div class="wrapper">
         <div class="header"><h1>{{ .Page.Title }}</h1></div>
         <div class="sidenav-left">
-            <ul>
-                {{ $currentPage := . }}
-                {{ range .Site.Menus.main }}
-                    {{ if .HasChildren }}
-                        <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                            <a href="#">
-                                {{ .Pre }}
-                                <span>{{ .Name }}</span>
-                            </a>
-                        </li>
-                        <ul class="sub-menu">
-                            {{ range .Children }}
-                                <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                                    <a href="{{ .URL }}">{{ .Name }}</a>
-                                </li>
-                            {{ end }}
-                        </ul>
-                    {{ else }}
-                        <li>
-                            <a href="{{ .URL }}">
-                                {{ .Pre }}
-                                <span>{{ .Name }}</span>
-                            </a>
-                        </li>
-                    {{ end }}
-                {{ end }}
-            </ul>  
+            {{ partial "navigation.html" . }}
         </div>
         <div class="body">
             {{ block "main" . }}

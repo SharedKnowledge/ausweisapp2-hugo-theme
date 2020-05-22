@@ -1,0 +1,5 @@
+<ul class="nav-dark">
+{{ range .Site.Menus.main }}
+    {{ partial "nav-element.html" . }}
+{{end}}
+</ul>
