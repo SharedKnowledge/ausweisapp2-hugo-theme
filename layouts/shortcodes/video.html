@@ -1,0 +1,9 @@
+{{ if .IsNamedParams }}
+<video src="{{.Get "src" }}" controls>
+    Your browser cannot play this video.
+</video>
+{{ else }}
+<video src="{{.Get 0}}" controls>
+    Your browser cannot play this video.
+</video>
+{{ end }}
