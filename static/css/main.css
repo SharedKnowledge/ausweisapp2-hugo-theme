@@ -12,6 +12,7 @@ html, body {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(19, 1fr);
   height: 100%;
 }
 
@@ -19,6 +20,7 @@ html, body {
   background-color: rgba(0, 0, 0, 0.7);
   grid-column: 2 / 10;
   grid-row: 1;
+  color: white;
 }
 
 .header h1 {
@@ -38,17 +40,27 @@ html, body {
   grid-row: 1 / 19;
 }
 
-.footer {
-  background-color: rgba(0, 0, 0, 0.7);
-  grid-column: 1 / 11;
-  grid-row: 19 / 21;
-}
-
 .body {
   grid-column: 2 / 10;
   grid-row: 2 / 19;
   padding: 1rem;
+  overflow: scroll;
 }
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  grid-column: 1 / 11;
+  grid-row: 19 / 21;
+  padding: 2rem 0rem 0rem;
+  text-align: center;
+  color: white;
+  text-decoration: none!important;
+}
+
+.footer a {
+  color: white;
+}
+
 
 /* end of grids */
 
@@ -117,7 +129,7 @@ Video related formattings
 */
 
 video {
-  width: 100%;
+  width: auto;
   height: auto;
 }
 
