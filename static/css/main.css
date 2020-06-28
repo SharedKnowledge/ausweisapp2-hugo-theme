@@ -87,6 +87,11 @@ ul {
 Image related formattings
 */
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 img[src$='#center']
 {
   display: block;
@@ -105,9 +110,35 @@ img[src$='#right']
   margin: 0.7rem;
 }
 
+/*
+Video related formattings
+*/
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+video[src$='#center'] {
+  display: block;
+  margin: 0.7rem auto;
+}
+
+video[src$='#left'] {
+  float:left;
+  margin: 0.7rem;
+}
+
+video[src$='#right'] {
+  float:right;
+  margin: 0.7rem;
+}
+
+
 /* table related settings */
 table {
-  margin: 20px 0px;
+  margin: 20px 15%;
+  width:70%; 
 }
 
 th {
@@ -129,4 +160,36 @@ paragraph settings
 
 p {
   margin-top: 15px;
+}
+
+/*
+
+*/
+
+h2 {
+  margin-top: 30px;
+}
+
+h3 {
+ margin-top: 20px; 
+}
+
+h4 {
+  margin-top: 15px;
+}
+
+h5 {
+  margin-top: 10px;
+}
+
+/**/
+
+div .shark {
+	background-image: url(http://www.sharksystem.net/bilder_shark/shark_Logo_grau.png); 
+  height: 49px;
+  width: 206px;
+}
+
+div .shark:hover {
+	background-image: url(http://www.sharksystem.net/bilder_shark/shark_Logo_graugruen.png);
 }
