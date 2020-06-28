@@ -22,14 +22,14 @@ html, body {
 }
 
 .header h1 {
-  padding: 5px 0px 0px 5px;
+  padding: 1rem 0px 1rem 0.4rem;
 }
 
 .sidenav-left {
   background-color: rgba(0, 0, 0, 0.7);
   grid-column: 1;
   grid-row: 1 / 19;
-  padding: 15px 5px;
+  padding: 1rem 0.5rem;
 }
 
 .sidenav-right {
@@ -46,13 +46,13 @@ html, body {
 .body {
   grid-column: 2 / 10;
   grid-row: 2 / 19;
-  padding: 15px;
+  padding: 1rem;
 }
 
 /* end of grids */
 
 ul {
-  padding-left: 12px;
+  padding-left: 1rem;
 }
 
 .sidenav-left ul {
@@ -62,16 +62,17 @@ ul {
 .sidenav-left ul li {
   text-decoration: none;
   list-style-type: none;
-  padding: 5px 0px;
+  padding: 0.4rem 0px;
 }
 
 /* Manipulate the highlighting*/
 .highlight {
-  padding: 5px 15px;
+  font-size: 18px;
+  padding: 1rem 1rem;
 }
 
 .sub-menu {
-  margin-left: 15px;
+  margin-left: 1rem;
 }
 
 .nav-dark li a {
@@ -137,8 +138,8 @@ video[src$='#right'] {
 
 /* table related settings */
 table {
-  margin: 20px 15%;
-  width:70%; 
+  margin: 2rem 15rem;
+  width: calc(100% - 30rem); 
 }
 
 th {
@@ -146,7 +147,7 @@ th {
 }
 
 th, td {
-  padding: 15px;
+  padding: 1.2rem 2rem;
   text-align: left;
 }
 
@@ -159,27 +160,27 @@ paragraph settings
 */
 
 p {
-  margin-top: 15px;
+  margin-top: 0.75rem;
 }
 
 /*
-
+headings settings
 */
 
 h2 {
-  margin-top: 30px;
+  margin-top: 1rem;
 }
 
 h3 {
- margin-top: 20px; 
+ margin-top: 1rem; 
 }
 
 h4 {
-  margin-top: 15px;
+  margin-top: 1rem;
 }
 
 h5 {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 /**/
