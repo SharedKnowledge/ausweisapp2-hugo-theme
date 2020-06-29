@@ -44,7 +44,8 @@ html, body {
   grid-column: 2 / 10;
   grid-row: 2 / 19;
   padding: 1rem;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .footer {
@@ -129,7 +130,7 @@ Video related formattings
 */
 
 video {
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
