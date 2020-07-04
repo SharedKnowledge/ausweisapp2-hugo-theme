@@ -25,37 +25,40 @@ html, body {
 
 .header h1 {
   padding: 1rem 0px 1rem 0.4rem;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 .sidenav-left {
   background-color: rgba(0, 0, 0, 0.7);
   grid-column: 1;
-  grid-row: 1 / 19;
-  padding: 1rem 0.5rem;
+  grid-row: 1 / 18;
+  padding: 1rem 2rem 1rem 0.4rem;
 }
 
 .sidenav-right {
   background-color: rgba(0, 0, 0, 0.7);
   grid-column: 10;
-  grid-row: 1 / 19;
+  grid-row: 1 / 18;
 }
 
 .body {
   grid-column: 2 / 10;
-  grid-row: 2 / 19;
-  padding: 1rem;
+  grid-row: 2 / 18;
+  padding: 0rem 2rem 0rem;
   overflow-x: hidden;
   overflow-y: scroll;
+  box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .footer {
   background-color: rgba(0, 0, 0, 0.7);
   grid-column: 1 / 11;
-  grid-row: 19 / 21;
+  grid-row: 18 / 21;
   padding: 2rem 0rem 0rem;
   text-align: center;
   color: white;
   text-decoration: none!important;
+  padding-bottom: 50px;
 }
 
 .footer a {
@@ -110,7 +113,7 @@ img {
 img[src$='#center']
 {
   display: block;
-  margin: 0.7rem auto;
+  margin: 0.2rem auto;
 }
 
 img[src$='#left']
@@ -130,7 +133,7 @@ Video related formattings
 */
 
 video {
-  width: 90%;
+  width: 85%;
   height: auto;
 }
 
@@ -175,26 +178,15 @@ paragraph settings
 
 p {
   margin-top: 0.75rem;
+  margin-left: 1rem;
 }
 
 /*
 headings settings
 */
 
-h2 {
-  margin-top: 1rem;
-}
-
-h3 {
+h2, h3, h4, h5 {
  margin-top: 1rem; 
-}
-
-h4 {
-  margin-top: 1rem;
-}
-
-h5 {
-  margin-top: 1rem;
 }
 
 /**/
